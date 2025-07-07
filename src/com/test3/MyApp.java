@@ -19,6 +19,34 @@ public class MyApp {
 		midstudent1.setName("세종대왕");
 		midstudent1.setAge(40);
 		midstudent1.studying();
-		midstudent1.gotoschool();		
+		midstudent1.gotoschool();	
+		
+		// Object
+		// Student
+		// MidStudent
+		// HighStudent
+		Object o = new Student();
+		Object o2 = new MidStudent();
+		Object o3 = new HighStudent();
+		HighStudent h = new HighStudent();
+		MidStudent m = new MidStudent();
+		Student s = h; // implicit cast
+		Student s2 = m; // ...		
 	}
+	void getData(Object o) {
+		String className = o.getClass().getName();
+		switch(className) {
+			case "Student":
+				break;
+		}		
+	}
+	void getData2(Student stu) {}
+	void getData3(MidStudent stu) {}
+	void getData4(HighStudent stu) {}
+	
 }
+
+
+
+
+
