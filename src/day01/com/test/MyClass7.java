@@ -1,4 +1,4 @@
-package com.test;
+package day01.com.test;
 
 class School {}
 public class MyClass7 {

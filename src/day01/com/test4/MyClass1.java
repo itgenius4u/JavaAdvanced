@@ -1,4 +1,4 @@
-package com.test4;
+package day01.com.test4;
 
 class A {
 	void aMethod() { System.out.println("aMethod on A"); } 

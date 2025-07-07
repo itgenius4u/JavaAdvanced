@@ -1,4 +1,4 @@
-package com.test5;
+package day01.com.test5;
 class Database { void dbOpen() { System.out.println("Database Open");} }
 class MySql extends Database {
 	void dbOpen() { System.out.println("MySql Open");}

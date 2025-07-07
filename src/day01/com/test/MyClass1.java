@@ -1,4 +1,4 @@
-package com.test;
+package day01.com.test;
 
 class Student { // public, default
 	String name; // public, private, protected, default

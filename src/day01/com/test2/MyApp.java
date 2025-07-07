@@ -1,4 +1,4 @@
-package com.test2;
+package day01.com.test2;
 
 public class MyApp {
 	static int add(int a, int b) {

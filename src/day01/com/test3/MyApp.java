@@ -1,4 +1,4 @@
-package com.test3;
+package day01.com.test3;
 
 public class MyApp {
 	public static void main(String[] args) {

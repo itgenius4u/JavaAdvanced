@@ -1,4 +1,4 @@
-package com.test4;
+package day01.com.test4;
 
 public class Dog extends Animal {
 	void bark() { System.out.println("Dog bark"); }
