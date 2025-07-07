@@ -31,12 +31,15 @@ public class MyApp {
 		cat2.meow();
 		
 		Animal animal5 = new Dog();
+		animal5.breath();
 		Animal animal6 = new Cat();
+		animal5.breath();
 		
-		
+//		오류 1
 //		Animal animal7 = new Animal();
 //		Dog dog4 = (Dog)animal7;
 		
+//      오류 2		
 //		Dog dog5 = new Dog();
 //		Animal animal7 = dog5;
 //		Cat cat4 = (Cat)animal7;
