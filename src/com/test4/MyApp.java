@@ -44,7 +44,13 @@ public class MyApp {
 //		Animal animal7 = dog5;
 //		Cat cat4 = (Cat)animal7;
 		
-		
+		Animal[] animals = new Animal[3];
+		animals[0] = new Animal();
+		animals[1] = new Dog();
+		animals[2] = new Cat();
+		for(Animal a : animals) {
+			a.breath();
+		}
 		
 		
 		
