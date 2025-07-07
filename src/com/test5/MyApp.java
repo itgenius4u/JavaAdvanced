@@ -25,7 +25,5 @@ public class MyApp {
 		 db.dbOpen();
 		 Database db2 = CreateDatabase("Oracle");
 		 db2.dbOpen();
-
 	}
-
 }
