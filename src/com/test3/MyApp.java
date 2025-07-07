@@ -12,6 +12,9 @@ public class MyApp {
 		student2.setAge(30);
 		student2.studying();
 		
+		Student student3 = new Student("을지문덕", 40);
+		student3.studying();
+		
 		MidStudent midstudent1 = new MidStudent();
 		midstudent1.setName("세종대왕");
 		midstudent1.setAge(40);

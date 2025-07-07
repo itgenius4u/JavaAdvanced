@@ -1,6 +1,11 @@
 package com.test3;
 
 public class Student {
+	public Student() {} // Default Constructor
+	public Student(String name, int age) { // Constructor Overloading
+		this.name = name;
+		this.age = age;
+	}
 	private String name;
 	private int age;
 	public String getName() {
