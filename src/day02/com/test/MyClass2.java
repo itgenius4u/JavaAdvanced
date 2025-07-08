@@ -25,7 +25,11 @@ public class MyClass2 {
 			System.out.println(s.name);
 		}
 		
-
+		String[] names = new String[] {"홍길동", "이순신"};
+		String[] names2 = {"세종대왕", "을지문덕"};
+		String[] names3 = null;
+		names = new String[] {"홍길동", "이순신"};
 	}
-
 }
+
+
