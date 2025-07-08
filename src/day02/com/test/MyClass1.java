@@ -30,5 +30,7 @@ public class MyClass1 {
 		if(s3.equals(s4)) {
 			System.out.println("O.K2");
 		}
+		System.out.println(s3.hashCode());
+		System.out.println(s4.hashCode());
 	}
 }
