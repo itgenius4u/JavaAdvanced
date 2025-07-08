@@ -10,6 +10,9 @@ class MyData2 {
 
 class Counter {
 	private int i;
+//	static {
+//		i = 10;
+//	}
 	public Counter() {
 		i++;
 	}
@@ -23,7 +26,8 @@ public class MyClass3 {
 //		MyData2.myMethod(10);
 		Counter c = new Counter();
 		System.out.println(c.getValue());
-
+		Counter c1 = new Counter();
+		System.out.println(c1.getValue());
 	}
 
 }
