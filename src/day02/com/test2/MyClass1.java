@@ -3,6 +3,9 @@ class Calculator {
 	public int add(int a, int b) { // int a = 10, int b = 20
 		int c = a + b;
 		return c;
+	}	
+	public int add(int a, int b, int c) {
+		return a + b + c;
 	}
 	public static int add2(int a, int b) { // int a = 10, int b = 20
 		int c = a + b;
@@ -31,12 +34,15 @@ public class MyClass1 {
 //		Calculator calc = new Calculator();
 //		int ret = calc.add(10, 20);		
 //		Calculator.add2(30, 40);		
-		int a = 0; 
-		setValue(a); // Call By Value
-		System.out.println(a);
-		MyData m = new MyData();
-		setValue2(m); // Call By Reference
-		System.out.println(m.a);
+//		int a = 0; 
+//		setValue(a); // Call By Value
+//		System.out.println(a);
+//		MyData m = new MyData();
+//		setValue2(m); // Call By Reference
+//		System.out.println(m.a);
+		Calculator calc2 = new Calculator();
+		calc2.add(1, 2, 3);
+		calc2.add(1, 2);
 	}
 }
 
