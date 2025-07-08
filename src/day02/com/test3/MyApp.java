@@ -6,16 +6,27 @@ package day02.com.test3;
 //interface Database {
 //	void dbOpen();
 //}
-class Database {
-	void dbOpen() { System.out.println("Database open"); }
+//class Database {
+//	void dbOpen() { System.out.println("Database open"); }
+//}
+interface Database{
+	void dbOpen();
 }
-class Oracle extends Database {
-	void dbOpen() { System.out.println("Oracle open"); }
+class Oracle implements Database {
+//	void dbOpen() { System.out.println("Oracle open"); }
 	void sqlQuery() { System.out.println("Oracle query"); }
+	@Override
+	public void dbOpen() {
+		System.out.println("Oracle open");		
+	}
 }
-class MySql extends Database {
-	void dbOpen() { System.out.println("Mysql open"); }
+class MySql implements Database {
+//	void dbOpen() { System.out.println("Mysql open"); }
 	void sqlQuery() { System.out.println("MySql query"); }
+	@Override
+	public void dbOpen() {
+		System.out.println("Mysql open");		
+	}
 }
 public class MyApp {
 //	static void dbOpen1(Oracle oracle) {
@@ -32,8 +43,14 @@ public class MyApp {
 //		oracle.dbOpen();
 //		MySql mysql = new MySql();
 //		mysql.dbOpen();
-		dbOpen(new Oracle());
-		dbOpen(new MySql());
+//		dbOpen(new Oracle());
+//		dbOpen(new MySql());
+//		Oracle oracle = new Oracle();
+//		Database db = (Database)oracle;
+		Database db = new Oracle();
+		db.dbOpen();
+		Database db2 = new MySql();
+		db2.dbOpen();
 	}
 }
 
