@@ -23,7 +23,7 @@ public class MyClass1 {
 	static void setValue(int a) { // int a = 0
 		a++;
 	}
-	static void setValue2(MyData m) {
+	static void setValue2(MyData m) { // MyData m = m
 		m.a++;
 	}
 	public static void main(String[] args) {
@@ -31,11 +31,11 @@ public class MyClass1 {
 //		Calculator calc = new Calculator();
 //		int ret = calc.add(10, 20);		
 //		Calculator.add2(30, 40);		
-		int a = 0;
-		setValue(a);
+		int a = 0; 
+		setValue(a); // Call By Value
 		System.out.println(a);
 		MyData m = new MyData();
-		setValue2(m);
+		setValue2(m); // Call By Reference
 		System.out.println(m.a);
 	}
 }
