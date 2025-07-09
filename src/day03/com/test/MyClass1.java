@@ -61,7 +61,5 @@ public class MyClass1 {
 		stu4.gotoschool(); 
 		Object stu5 = new MidStudent();
 		((MidStudent)stu5).gotoschool();
-		
-		
 	}
 }
