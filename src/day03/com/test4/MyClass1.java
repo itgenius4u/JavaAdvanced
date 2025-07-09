@@ -10,6 +10,9 @@ class Oracle implements Database {
 	public void close() { System.out.println("MySql open");}
 }
 public class MyClass1 {
+	void testMethod(Database db) {
+		db.open();
+	}
 	public static void main(String[] args) {
 		Database db = new Oracle();
 		db.open();
