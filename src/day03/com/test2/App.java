@@ -1,7 +1,7 @@
 package day03.com.test2;
 
 class DbManager {
-	public Database CreateDatabase(String dbName) {
+	public static Database CreateDatabase(String dbName) {
 		Database db = null;
 		switch(dbName) {
 			case "Oracle":
@@ -17,8 +17,8 @@ class DbManager {
 
 public class App {
 	public static void main(String[] args) {
-//		Database db = DbManager.CreateDatabase("Oracle");
-//		db.open();
+		Database db = DbManager.CreateDatabase("Oracle");
+		db.open();
 //		MySql mysql = new MySql();
 //		mysql.open();
 //		Oracle oracle = new Oracle();
