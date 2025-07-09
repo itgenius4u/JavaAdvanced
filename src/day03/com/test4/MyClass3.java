@@ -15,6 +15,12 @@ class Multiply implements Calculator {
 		return a * b;
 	} // 곱셈	
 }
+class Divide implements Calculator {
+	@Override
+	public int calculate(int a, int b) {
+		return a/b;
+	}	
+}
 class Calc {
 	Calculator c;
 	public Calc(Calculator c) { 		
@@ -26,11 +32,7 @@ class Calc {
 }
 public class MyClass3 {
 	public static void main(String[] args) {
-//		Calc calc = new Calc(new Multiply());
-//		Calc calc = new Calc(new Add());
-//		calc.calculate(1, 2);
-
-		
-
+		Calc calc = new Calc(new Divide());
+		calc.calculate(10, 20);
 	}
 }
