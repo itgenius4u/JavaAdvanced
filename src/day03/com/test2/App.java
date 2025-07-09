@@ -1,5 +1,6 @@
 package day03.com.test2;
 
+// Factory Pattern...
 class DbManager {
 	public static Database CreateDatabase(String dbName) {
 		Database db = null;
@@ -14,10 +15,9 @@ class DbManager {
 		return db;
 	}
 }
-
 public class App {
 	public static void main(String[] args) {
-		Database db = DbManager.CreateDatabase("Oracle");
+		Database db = DbManager.CreateDatabase("MySql");		
 		db.open();
 //		MySql mysql = new MySql();
 //		mysql.open();
