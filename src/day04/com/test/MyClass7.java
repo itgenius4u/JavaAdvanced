@@ -1,5 +1,5 @@
 package day04.com.test;
-
+// 484페이지 예제
 public class MyClass7 {
 	void m() throws ArithmeticException {
 		//int d = 10/0;
