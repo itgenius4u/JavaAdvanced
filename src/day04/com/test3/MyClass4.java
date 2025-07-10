@@ -18,15 +18,15 @@ class Member {
 		return false;
 	}
 }
-
 public class MyClass4 {
 	public static void main(String[] args) {
 		Member member = new Member("이순신", 10);
-		Member member2 = new Member("세종대왕", 20);
-//		if(member.equals(member2)) {
-//			
-//		}
-
+		Member member2 = new Member("세종대왕",10);
+		if(member.equals(member2)) {
+			System.out.println("OK");
+		} else {
+			System.out.println("Not Ok");
+		}
 	}
 
 }
