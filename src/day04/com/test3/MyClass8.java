@@ -1,8 +1,17 @@
 package day04.com.test3;
-
+// Table: employees
+// empNo     empName
+// 11111     홍길동
+// 22222     세종대왕
 class Employee {
 	private int empNo;
 	private String empName;	
+	
+	public Employee(int empNo, String empName) {
+		super();
+		this.empNo = empNo;
+		this.empName = empName;
+	}
 	public int getEmpNo() {
 		return empNo;
 	}
@@ -19,9 +28,14 @@ class Employee {
 		System.out.println(empNo + ", " + empName);
 	}	
 }
-
 public class MyClass8 {
-
 	public static void main(String[] args) {
+		Employee emp1 = new Employee(11111, "홍길동");
+		Employee emp2 = new Employee(11112, "세종대왕");
 	}
 }
+
+
+
+
+
