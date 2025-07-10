@@ -14,5 +14,6 @@ public class MyClass3 {
 		A a = new A();
 		a.setAMember(1000);
 		System.out.println(a.toString());
+		System.out.println(a);
 	}
 }
