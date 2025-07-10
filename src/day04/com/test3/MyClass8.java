@@ -38,10 +38,11 @@ public class MyClass8 {
 //		Employee emp2 = new Employee(11112, "세종대왕");
 		List<Employee> emps = new ArrayList<>();
 		emps.add(new Employee(11111, "홍길동"));
-		emps.add(new Employee(11112, "세종대왕"));
+		emps.add(new Employee(22222, "세종대왕"));
 		for(Employee e : emps) {
-			System.out.println(e.getEmpNo() + ", "
-					+ e.getEmpName())
+//			System.out.println(e.getEmpNo() + ", "
+//					+ e.getEmpName());
+			e.getEmpInfo();
 		}
 	}
 }
