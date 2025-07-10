@@ -1,4 +1,8 @@
 package day04.com.test3;
+
+import java.util.ArrayList;
+import java.util.List;
+
 // Table: employees
 // empNo     empName
 // 11111     홍길동
@@ -30,8 +34,15 @@ class Employee {
 }
 public class MyClass8 {
 	public static void main(String[] args) {
-		Employee emp1 = new Employee(11111, "홍길동");
-		Employee emp2 = new Employee(11112, "세종대왕");
+//		Employee emp1 = new Employee(11111, "홍길동");
+//		Employee emp2 = new Employee(11112, "세종대왕");
+		List<Employee> emps = new ArrayList<>();
+		emps.add(new Employee(11111, "홍길동"));
+		emps.add(new Employee(11112, "세종대왕"));
+		for(Employee e : emps) {
+			System.out.println(e.getEmpNo() + ", "
+					+ e.getEmpName())
+		}
 	}
 }
 
