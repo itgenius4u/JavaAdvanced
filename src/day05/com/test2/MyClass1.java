@@ -23,9 +23,9 @@ public class MyClass1 {
 		Thread mainThread = Thread.currentThread();
 		System.out.println(mainThread.getName() + ", " +
 				mainThread.getId());
-		MyThread m1 = new MyThread("MyThread #1");
+		MyThread m1 = new MyThread("MyThread #1", 5000);
 		m1.start();
-		MyThread m2 = new MyThread("MyThread #2");
+		MyThread m2 = new MyThread("MyThread #2", 1000);
 		m2.start();
 	}
 }
