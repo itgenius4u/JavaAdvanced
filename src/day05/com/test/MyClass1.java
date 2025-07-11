@@ -6,6 +6,7 @@ interface Database {
 interface Oracle {
 	String connect();
 }
+//@FunctionalInterface  
 interface Calc {
 	int add(int a, int b);
 }
@@ -27,6 +28,11 @@ public class MyClass1 {
 			return "";
 		};
 		oracle2.connect();
+		
+		Calc c = (x, y) -> { return x + y;};
+		c.add(10, 20);
+		
+		// 입력 -> 출력(o), 입력 -> 출력(x), 입력(x) -> 출력(o)..
 		
 	}
 }
