@@ -51,9 +51,11 @@ public class MyClass1 {
 				(n) -> System.out.println(n)
 				);
 		
-		
-		
-		
+		// 2025.07.11
+		// 2025-07-11 
+		// 11/07/25
+		// yyyy-mm-dd hh:mm:sss
+	
 	}
 }
 
