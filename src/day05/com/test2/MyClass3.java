@@ -12,9 +12,11 @@ class MyWork1 extends Thread {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			this.myCount.incrementCount();
-			System.out.println(this.getName() + ", " 
-					+ this.getId() + ", Count: "	 + myCount.getCount());
+			synchronized(myCount) {
+				this.myCount.incrementCount();
+				System.out.println(this.getName() + ", " 
+						+ this.getId() + ", Count: "	 + myCount.getCount());
+			}
 		}
 	}
 }
@@ -31,9 +33,11 @@ class MyWork2 extends Thread {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			this.myCount.incrementCount();
-			System.out.println(this.getName() + ", " 
-					+ this.getId() + ", Count: "	 + myCount.getCount());
+			synchronized(myCount) {
+				this.myCount.incrementCount();
+				System.out.println(this.getName() + ", " 
+						+ this.getId() + ", Count: "	 + myCount.getCount());
+			}
 		}
 	}
 }
