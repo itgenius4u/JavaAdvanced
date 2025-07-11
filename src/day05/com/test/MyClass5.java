@@ -1,4 +1,8 @@
 package day05.com.test;
+
+import java.util.HashMap;
+import java.util.Map;
+
 class Employee {
 	private int empNo;
 	private String empName;
@@ -37,7 +41,24 @@ class Employee {
 }
 public class MyClass5 {
 	public static void main(String[] args) {
-
+		Employee emp = 
+				new Employee(1111, "이순신", 20, "Seoul");
+		Employee emp2 = 
+				new Employee(2222, "홍길동", 23, "Incheon");
+		Map<Integer, Employee> maps
+			= new HashMap<Integer, Employee>();
+		maps.put(1111, emp);
+		maps.put(2222, emp2);
+		for(Map.Entry m: maps.entrySet()) {
+//			System.out.println(m.getKey());
+			Employee e = (Employee)m.getValue();
+			System.out.println(e.getEmpNo() + ", " +
+					e.getAddress());
+		}
 	}
-
 }
+
+
+
+
+
