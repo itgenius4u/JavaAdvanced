@@ -1,4 +1,8 @@
 package day05.com.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 interface Database {
 	void open();
 	String select(String sql);
@@ -21,7 +25,7 @@ public class MyClass1 {
 		d.open();
 		d.select("SELECT...");
 		Oracle oracle = new Oracle() {
-			public void connect() {}
+			public String connect() { return "Oracle";}
 		};
 		// Lambda Expression 
 		Oracle oracle2 = () -> { 
@@ -33,6 +37,22 @@ public class MyClass1 {
 		c.add(10, 20);
 		
 		// 입력 -> 출력(o), 입력 -> 출력(x), 입력(x) -> 출력(o)..
+		
+		List<String> list = new ArrayList<>();
+		list.add("이순신");
+		list.add("세종대왕");
+		for(int inx = 0; inx < list.size(); inx++) {
+			System.out.println(list.get(inx));			
+		}
+		for(String s : list) {
+			System.out.println(s);
+		}
+		list.forEach(
+				(n) -> System.out.println(n)
+				);
+		
+		
+		
 		
 	}
 }
