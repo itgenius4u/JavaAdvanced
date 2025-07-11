@@ -39,10 +39,10 @@ class MyWork2 extends Thread {
 }
 class MyCount {	
 	private int count = 0;
-	public void incrementCount() {
+	public synchronized void incrementCount() {
 		count++;
 	}
-	public int getCount() {
+	public synchronized int getCount() {
 		return count;
 	}
 }
