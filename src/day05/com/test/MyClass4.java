@@ -20,8 +20,13 @@ public class MyClass4 {
 					m.getValue());
 		}
 		
+		// Employee
+		// empNo    empName   age   address
+		// 1111     이순신      30    Seoul
+		// 2222     권율       20     Busan
 		
-		
+		//Map<Integer, Employee>
+		//    1111,  (1111, 이순신, 30, Seoul)
 		
 	}
 }
