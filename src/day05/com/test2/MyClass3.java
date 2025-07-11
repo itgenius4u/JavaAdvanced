@@ -1,6 +1,17 @@
 package day05.com.test2;
 class MyWork1 extends Thread {
-	public void run() {}
+	public void run() {
+		for(int inx = 0; inx < 10; inx++) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println(this.getName() + ", " 
+					+ this.getId() + ", Count: "	);
+		}
+	}
 }
 class MyWork2 extends Thread {
 	public void run() {}
